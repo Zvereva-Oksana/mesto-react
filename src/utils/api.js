@@ -39,7 +39,7 @@ class Api {
         })
     }
 
-    addInfoUser(infoData) {
+    setUserInfo(infoData) {
         const Url = `${this._baseUrl}/users/me`;
         return this._request(Url, {
             method: 'PATCH',
